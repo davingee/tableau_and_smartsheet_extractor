@@ -1,5 +1,6 @@
 # tableau_and_smartsheet_extractor
- Dashboard Extractor
+
+Dashboard Extractor
 
 ## Setup
 
@@ -11,9 +12,10 @@ playwright install chromium
 ```
 
 Edit `.env`:
+
 ```
 OPENAI_API_KEY=sk-...
-DATABASE_URL=postgresql+asyncpg://scottsmith@localhost:5432/extractor
+DATABASE_URL=postgresql+asyncpg://username:password@localhost:5432/extractor
 ```
 
 ## Extract
@@ -30,6 +32,7 @@ Output goes to `images/` (screenshots) and `output/YYYY-MM-DD/` (JSON and CSV).
 ## Upload to DB
 
 **Manually:**
+
 ```bash
 python db_upload.py cbps  output/YYYY-MM-DD/cbps_dashboard.json
 python db_upload.py cbcbt output/YYYY-MM-DD/crosstab.csv
@@ -38,6 +41,7 @@ python db_upload.py cbcbt output/YYYY-MM-DD/crosstab.csv
 Tables are created automatically on first run.
 
 **Automatically after extract** — uncomment these lines in `open_ai_api.py`:
+
 ```python
 # from db_upload import upload_cbps; await upload_cbps(data)   # in get_cbps_data()
 # from db_upload import upload_cbcbt; await upload_cbcbt(data) # in get_cbcbt_data()
