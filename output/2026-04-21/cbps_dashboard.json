@@ -1,0 +1,146 @@
+{
+  "dashboard": {
+    "title": "Clean Buildings Performance Standard: Tier 1 & Tier 2 Compliance Application Dashboard",
+    "applications_to_date": 1530
+  },
+  "overview_by_status": {
+    "compliance_and_exemption_applications": {
+      "approved_or_pre_approved": 1121,
+      "pending": 297,
+      "withdrawn": 10,
+      "denied": 102
+    },
+    "tier_1": {
+      "approved_or_pre_approved": 682,
+      "pending": 187,
+      "withdrawn": 10,
+      "denied": 18
+    },
+    "tier_2": {
+      "approved": 438,
+      "pending": 167,
+      "withdrawn": null,
+      "denied": 20
+    }
+  },
+  "gross_floor_area_sq_ft": {
+    "total_application_gfa": 248805280,
+    "approved_gfa": 199617724
+  },
+  "overview_by_application_type": {
+    "counts": {
+      "compliance": 1011,
+      "exemption": 517
+    }
+  },
+  "building_tier": {
+    "counts": {
+      "tier_1": 629,
+      "tier_2": 899
+    }
+  },
+  "overview_by_building_activity_type": {
+    "portion_of_applications_percent": [
+      {
+        "label": "Education",
+        "percent": 28
+      },
+      {
+        "label": "Manufacturing/Industrial",
+        "percent": 28
+      },
+      {
+        "label": "Office",
+        "percent": 17
+      },
+      {
+        "label": "Warehouse/Storage",
+        "percent": 10
+      },
+      {
+        "label": "Agricultural",
+        "percent": 7
+      },
+      {
+        "label": "Other",
+        "percent": 10
+      }
+    ],
+    "activity_type_counts": [
+      {
+        "label": "Education",
+        "count": 133
+      },
+      {
+        "label": "Manufacturing/Industrial",
+        "count": 133
+      },
+      {
+        "label": "Office",
+        "count": 80
+      },
+      {
+        "label": "Warehouse/Storage",
+        "count": 49
+      },
+      {
+        "label": "Agricultural",
+        "count": 31
+      },
+      {
+        "label": "Technology/Science",
+        "count": 8
+      },
+      {
+        "label": "Healthcare",
+        "count": 6
+      },
+      {
+        "label": "Public services",
+        "count": 6
+      },
+      {
+        "label": "Religious worship",
+        "count": 5
+      },
+      {
+        "label": "Lodging/Residential",
+        "count": 5
+      },
+      {
+        "label": "Retail",
+        "count": 3
+      },
+      {
+        "label": "Mixed-use",
+        "count": 2
+      }
+    ]
+  },
+  "cumulative_applications": [
+    {
+      "period": "Dec 21",
+      "applications": 0
+    },
+    {
+      "period": "Jan 22",
+      "applications": 45
+    },
+    {
+      "period": "Feb 23",
+      "applications": 133
+    },
+    {
+      "period": "Mar 23",
+      "applications": 233
+    },
+    {
+      "period": "Apr 23",
+      "applications": 928
+    },
+    {
+      "period": "Jun 26",
+      "applications": 1530
+    }
+  ]
+}
