@@ -13,8 +13,8 @@ from web_automator import WebAutomator
 load_dotenv()
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-SMARTSHEET_URL = "https://app.smartsheet.com/b/publish?EQBCT=aed63fff52404b11b1885e5d04146d34"
-TABLEAU_INDEX_URL = "https://public.tableau.com/app/profile/com.buildings/vizzes"
+SMARTSHEET_URL = os.environ["SMARTSHEET_PUBLISH_URL"]
+TABLEAU_INDEX_URL = os.environ["TABLEAU_INDEX_URL"]
 
 
 def _output_dir() -> Path:

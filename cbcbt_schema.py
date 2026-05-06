@@ -21,7 +21,7 @@ CBCBT_SCHEMA = {
             "type": "array",
             "items": {
                 "type": "object",
-                "additionalProperties": False,  # <- MUST exist here
+                "additionalProperties": False,
                 "required": [
                     "County",
                     "Grand Total",

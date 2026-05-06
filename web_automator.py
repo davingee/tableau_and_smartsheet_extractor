@@ -1,5 +1,3 @@
-import asyncio
-import time
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 from playwright.async_api import async_playwright  # pyright: ignore[reportMissingImports]
 
@@ -25,7 +23,7 @@ class WebAutomator:
             )
             page = await context.new_page()
             await page.goto(url, wait_until="domcontentloaded")
-            time.sleep(wait_time)
+            await page.wait_for_timeout(wait_time * 1000)
             if click_what:
                 btn = page.get_by_label(click_what)
                 await btn.wait_for(state="visible", timeout=10000)

@@ -15,7 +15,9 @@ Edit `.env`:
 
 ```
 OPENAI_API_KEY=sk-...
-DATABASE_URL=postgresql+asyncpg://username:password@localhost:5432/extractor
+DATABASE_URL=postgresql://user:password@host:5432/dbname
+SMARTSHEET_PUBLISH_URL=https://app.smartsheet.com/b/publish?EQBCT=...
+TABLEAU_INDEX_URL=https://public.tableau.com/app/profile/com.buildings/vizzes
 ```
 
 ## Extract
